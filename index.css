@@ -506,29 +506,53 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Experience Section ----- */
 /* --------------------------------------- */
 
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+.experience {
+    padding: var(--gutter-huge) 0;
+    background-color: var(--black);
+    border-top: var(--border-light);
 }
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+.experience h2 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
+    color: var(--pink);
 }
 
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
+.experience__content {
+    margin-top: var(--gutter-medium);
+}
 
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
+.experience__content .job {
+    margin-bottom: var(--gutter-huge);
+}
+
+.experience__content .job h3 {
+    font-size: var(--font-size-medium-1);
+    margin-bottom: var(--gutter-small);
+    color: var(--white);
+}
+
+.experience__content .company {
+    font-style: italic;
+    color: var(--white-1);
+}
+
+.experience__content .dates {
+    color: var(--pink);
+    margin-bottom: var(--gutter-small);
+}
+
+.experience__content ul {
+    list-style: disc inside;
+    margin-left: 2rem;
+}
+
+.experience__content ul li {
+    margin-bottom: var(--gutter-small);
+    color: var(--white-1);
 }
 
 /* --------------------------------------- */
