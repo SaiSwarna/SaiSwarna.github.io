@@ -43,14 +43,38 @@
         </h1>
         <!-- Put a small paragraph about yourself -->
         <p>Graduate Student at University of Ottawa.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+<!--        <a href="#contact" class="btn btn&#45;&#45;pink">Get in touch</a>-->
+        <a href="https://drive.google.com/file/d/1RXMeQtqTHP9Miei6XlzYrrl_V-y7yjiL/view?usp=drive_link" class="btn btn--pink">Resume</a>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+
+    <section id="experience" class="experience-section">
+    <h2>Experience</h2>
+    <div class="job">
+        <h3>Software Engineer</h3>
+        <p class="company">GigSky, Bangalore, India</p>
+        <p class="dates">Aug 2021 - Aug 2023</p>
+        <ul>
+            <li>Developed a feature that manages new GigSky plans that handle up to 60 million CallDataRecords and dockerized it. Used Flink, Kafka, and MongoDB and created Kafka JDBC connectors for source.</li>
+            <li>Designed and developed a Flink SpringBoot application that handles Alert notifications based on Data usage of GigSky sim users, processing around 40 million data per day.</li>
+            <li>Implemented a feature in an app that uses KafkaStreams instead of REST APIs connecting between 2 backend microservices, resulting in a 30% decrease in latency. Additionally, automated test cases and performed load testing and benchmarked the results.</li>
+        </ul>
+    </div>
+    <div class="job">
+        <h3>Software Engineer Intern</h3>
+        <p class="company">GigSky, Bangalore, India</p>
+        <p class="dates">Jan 2021 - July 2021</p>
+        <ul>
+            <li>Optimized the Stream processing pipeline using technologies such as Kafka, Flink.</li>
+            <li>Researched on AWS ECR and migrated from DockerHub to ECR for enhanced efficiency and scalability, while reducing deployment time by 50%.</li>
+        </ul>
+    </div>
+</section>
+    <!-- ***** Projects ***** -->
 
     <section class="work" id="work">
       <div class="row">
@@ -82,7 +106,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/BlockchainVoting.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -160,7 +184,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/MyPhoto.jpg" alt="" />
+            <img class="about__photo" src="./images/MyPhoto.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -174,7 +198,7 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Here are few facts about me- I love playing Badminton, I speak 6 languages & I enjoy cooking. The quickest way to reach out to
+          Here are few facts about me- I love playing Badminton, I speak 6 languages & I enjoy cooking. If you want to connect or for a quick coffee chat, feel free to reach out to me. The quickest way to reach out to
           me is via an email.
         </p>
         <!-- Replace the email with yours -->
@@ -201,7 +225,7 @@
         </li>
         <li class="footer__social-link-item">
           <a href="https://uottawacsi5122.blogspot.com/2023/11/ux-analysis-of-zoom-app.html" title="Link to Blog">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Blog">
+            <img src="./images/blogger.svg" class="footer__social-image" alt="Blog">
           </a>
         </li>
       </ul>
