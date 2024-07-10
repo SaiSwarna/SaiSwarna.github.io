@@ -589,6 +589,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo {
     max-width: 100%;
+    max-height: 300px;
     height: auto;
 }
 
