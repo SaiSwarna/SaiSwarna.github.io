@@ -2,270 +2,352 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
 
-  <!-- Put your site title here -->
-  <title>
-    Sai Swarna Dowley Rajendran | Graduate Student at University of Ottawa.
-  </title>
+    <title>
+        Sai Swarna Dowley Rajendran | Graduate Student at University of Ottawa.
+    </title>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+    <meta name="description" content="Add small description of yourslef.">
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta name="keywords" content="Put your name, skills and some coding keywords"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
 <body>
 
-  <!-- ***** Header ***** -->
+<!-- ***** Header ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Sai Swarna Dowley Rajendran</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Graduate Student at University of Ottawa.</p>
-<!--        <a href="#contact" class="btn btn&#45;&#45;pink">Get in touch</a>-->
-        <a href="https://drive.google.com/file/d/1ytlocj0n2uoD3kwz6YEMvgTuG0KxNL8u/view?usp=drive_link" class="btn btn--pink">Resume</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-<!-- ***** Experience ***** -->
-<section class="experience" id="experience">
+<header class="header" role="banner" id="top">
   <div class="row">
-    <h2>Work Experience</h2>
-    <div class="experience__content">
-      <div class="job">
-        <h3>Customer Experience Developer Coop, Cloud RAN System DevOps team</h3>
-        <p class="company">Ericsson, Ottawa, Canada</p>
-        <p class="dates">September 2024 - April 2025</p>
-        <ul>
-          <li>Improved system reliability by 70% by building a Dockerized microservice to automate health checks for Cloud RAN (Radio Access Network) applications and deployed in a Kubernetes cluster.</li>
-          <li>Streamlined the deployment by implementing a CI/CD pipeline using Jenkins and Helm charts, reducing manual effort and accelerating release cycles.</li>
-          <li>Achieved 90% reduction for testing on remote Test channels using reusable Ansible playbooks.</li>
-          <li>Resolved design rule violations to ensure rApp compliance with security standards and successful integration into production environments.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Full Stack Developer Intern</h3>
-        <p class="company">Snovation, Remote, Canada</p>
-        <p class="dates">June 2024 - August 2024</p>
-        <ul>
-          <li>Engineered innovative backend features for Nalan by collaborating closely with the product team, resulting in a 30% increase in operational efficiency.</li>
-          <li>Collaborated with the R&D team to develop and integrate Generative AI models, resulting in a reduction of manual processing time by 85%.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Software Engineer, Data Analytics team</h3>
-        <p class="company">GigSky, Bangalore, India</p>
-        <p class="dates">Aug 2021 - Aug 2023</p>
-        <ul>
-          <li>Developed a feature that manages new GigSky plans handling up to 60 million CallDataRecords and dockerized it. Utilized Flink, Kafka, and MongoDB, and created Kafka JDBC connectors for source.</li>
-          <li>Designed and developed a Flink Spring Boot application handling alert notifications based on data usage of GigSky SIM users, processing around 40 million data per day.</li>
-          <li>Implemented a feature in an app that uses KafkaStreams instead of REST APIs to connect between two backend microservices, resulting in a 30% decrease in latency. Additionally, automated test cases, performed load testing, and benchmarked results.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Software Engineer Intern</h3>
-        <p class="company">GigSky, Bangalore, India</p>
-        <p class="dates">Jan 2021 - July 2021</p>
-        <ul>
-          <li>Optimized the stream processing pipeline using technologies such as Kafka and Flink.</li>
-          <li>Researched AWS ECR and migrated from DockerHub to ECR for enhanced efficiency and scalability, reducing deployment time by 50%.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Project Intern</h3>
-        <p class="company">HPE, Bangalore, India</p>
-        <p class="dates">Aug 2019 - June 2020</p>
-        <ul>
-          <li>Conducted comparative research on Hypervisor Security and Security aspects of Cloud, focusing on AWS and Google cloud and presented findings through a seminar.</li>
-        </ul>
-      </div>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#experience">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</section>
+    <div class="header__text-box row">
+        <div class="header__text">
+            <h1 class="heading-primary">
+                <span class="typing">Sai Swarna Dowley Rajendran</span>
+            </h1>
+            <p>Graduate Student at University of Ottawa.</p>
+            <a href="https://drive.google.com/file/d/1XuYIsSBxsJrRa0o51dAUTf66GtjDITYG/view?usp=sharing"
+               class="btn btn--pink">Resume</a>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+    <!-- ***** Experience ***** -->
+    <section class="experience" id="experience">
+        <div class="row">
+            <h2>Work Experience</h2>
+            <div class="experience__content">
+                <div class="job">
+                    <h3>Software Developer</h3>
+                    <p class="company">Ericsson, Ottawa, Canada</p>
+                    <p class="dates">September 2025 - Present</p>
+                    <ul>
+                        <li>Shortened test deployment time by 25% by migrating k6 testware into Ericsson's unified System Test Automation tool, helping to standardize workflows.
+                        </li>
+                        <li>Accelerated incident recovery by 40% (MTTR) by improving the developer experience through enhanced observability tools, feature design collaboration, and on-call reliability for Kubernetes services.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Customer Experience Developer Coop, Cloud RAN System DevOps team</h3>
+                    <p class="company">Ericsson, Ottawa, Canada</p>
+                    <p class="dates">September 2024 - April 2025</p>
+                    <ul>
+                        <li>Improved system reliability by 70% by building a Dockerized microservice to automate health
+                            checks for Cloud RAN (Radio Access Network) applications and deployed in a Kubernetes
+                            cluster.
+                        </li>
+                        <li>Streamlined the deployment by implementing a CI/CD pipeline using Jenkins and Helm charts,
+                            reducing manual effort and accelerating release cycles.
+                        </li>
+                        <li>Achieved 90% reduction for testing on remote Test channels using reusable Ansible
+                            playbooks.
+                        </li>
+                        <li>Resolved design rule violations to ensure rApp compliance with security standards and
+                            successful integration into production environments.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Full Stack Developer Intern</h3>
+                    <p class="company">Snovation, Remote, Canada</p>
+                    <p class="dates">June 2024 - August 2024</p>
+                    <ul>
+                        <li>Engineered innovative backend features for Nalan by collaborating closely with the product
+                            team, resulting in a 30% increase in operational efficiency.
+                        </li>
+                        <li>Collaborated with the R&D team to develop and integrate Generative AI models, resulting in a
+                            reduction of manual processing time by 85%.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Software Engineer, Data Analytics team</h3>
+                    <p class="company">GigSky, Bangalore, India</p>
+                    <p class="dates">Aug 2021 - Aug 2023</p>
+                    <ul>
+                        <li>Developed a feature that manages new GigSky plans handling up to 60 million CallDataRecords
+                            and dockerized it. Utilized Flink, Kafka, and MongoDB, and created Kafka JDBC connectors for
+                            source.
+                        </li>
+                        <li>Designed and developed a Flink Spring Boot application handling alert notifications based on
+                            data usage of GigSky SIM users, processing around 40 million data per day.
+                        </li>
+                        <li>Implemented a feature in an app that uses KafkaStreams instead of REST APIs to connect
+                            between two backend microservices, resulting in a 30% decrease in latency. Additionally,
+                            automated test cases, performed load testing, and benchmarked results.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Software Engineer Intern</h3>
+                    <p class="company">GigSky, Bangalore, India</p>
+                    <p class="dates">Jan 2021 - July 2021</p>
+                    <ul>
+                        <li>Optimized the stream processing pipeline using technologies such as Kafka and Flink.</li>
+                        <li>Researched AWS ECR and migrated from DockerHub to ECR for enhanced efficiency and
+                            scalability, reducing deployment time by 50%.
+                        </li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Project Intern</h3>
+                    <p class="company">HPE, Bangalore, India</p>
+                    <p class="dates">Aug 2019 - June 2020</p>
+                    <ul>
+                        <li>Conducted comparative research on Hypervisor Security and Security aspects of Cloud,
+                            focusing on AWS and Google cloud and presented findings through a seminar.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ***** Projects ***** -->
 
     <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="work__boxes">
+        <div class="row">
+            <h2>Projects</h2>
+            <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+                <!-- Each div with the work__box class is a project. -->
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Smart Contract Specifications: Development of a Library of Functions for Symboleo</h3>
+                        <h4> CSM lab at University of Ottawa</h4>
+                        <p>
+                            Extended the Symboleo smart contract modeling language by adding support for advanced arithmetic, logical,
+                            and proposition operators across JavaScript and nuXmv generators.
+                        </p>
+                        <ul class="work__list">
+                            <li>JavaScript</li>
+                            <li>nuXmv</li>
+                            <li>Hyperledger fabric</li>
+                            <li>Unit testing</li>
+                        </ul>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Online Voting System using Blockchain</h3>
-              <p>
-                A client-based decentralized application for voting system using Ethereum, Truffle framework, Solidity.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MongoDB</li>
-              </ul>
+                        <div class="work__links">
+                            <a href="https://sites.google.com/uottawa.ca/csmlab/" title="View website"
+                               target="_blank">
+                                <img src="./images/github.svg" class="work__code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="work__links">
-<!--                <a href="https://nisar.surge.sh" target="_blank" class="link__text">-->
-<!--                  Visit Site <span>&rarr;</span>-->
-<!--                </a>-->
-                <a href="https://github.com/SaiSwarna/ElectionDapp" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Online Voting System using Blockchain</h3>
+                        <p>
+                            A client-based decentralized application for voting system using Ethereum, Truffle
+                            framework, Solidity.
+                        </p>
+                        <ul class="work__list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MongoDB</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="https://github.com/SaiSwarna/ElectionDapp" title="View Source Code"
+                               target="_blank">
+                                <img src="./images/github.svg" class="work__code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+<!--                    <div class="work__image-box">-->
+<!--                        <img src="./images/BlockchainVoting.png" class="work__image" alt="Project 1"/>-->
+<!--                    </div>-->
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Weapon Detection & Classification Using CNN</h3>
+                        <p>
+                            Built a CNN model that accurately detects and classifies weapons in real-time with 98%
+                            accuracy, leveraging Computer vision and Deep learning.
+                        </p>
+                        <ul class="work__list">
+                            <li>Python</li>
+                            <li>CNN</li>
+                            <li>Yolov3</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="https://github.com/SaiSwarna/Weapon-Detection-Classification-using-CNN">
+                                <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+<!--                    <div class="work__image-box">-->
+<!--                        <img src="./images/weapons_output.jpeg" class="work__image" alt="Project 1"/>-->
+<!--                    </div>-->
+                </div>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Plagiarism Detector</h3>
+                        <p>
+                            The project compares two documents and gives the percentage of similarity. Deployed as a
+                            standalone application using JavaFX and as a web application using Java Server Pages.
+                        </p>
+                        <ul class="work__list">
+                            <li>Object Oriented design</li>
+                            <li>JavaFx</li>
+                            <li>JavaServerPages</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="https://github.com/SaiSwarna">
+                                <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <!--            <div class="work__image-box">-->
+                    <!--              <img src="./images/project-3.png" class="work__image" alt="Project 3" />-->
+                    <!--            </div>-->
+                </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/BlockchainVoting.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Weapon Detection & Classification Using CNN</h3>
-              <p>
-                Built a CNN model that accurately detects and classifies weapons in real-time with 98% accuracy, leveraging Computer vision and Deep learning.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>CNN</li>
-                <li>Yolov3</li>
-              </ul>
-
-              <div class="work__links">
-<!--                <a href="#" class="link__text">-->
-<!--                  Visit Site <span>&rarr;</span>-->
-<!--                </a>-->
-                <a href="https://github.com/SaiSwarna/Weapon-Detection-Classification-using-CNN">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/weapons_output.jpeg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Plagiarism Detector</h3>
-              <p>
-                The project compares two documents and gives the percentage of similarity. Deployed as a standalone application using JavaFX and as a web application using Java Server Pages.
-              </p>
-              <ul class="work__list">
-                <li>Object Oriented design</li>
-                <li>JavaFx</li>
-                <li>JavaServerPages</li>
-              </ul>
-
-              <div class="work__links">
-<!--                <a href="#" class="link__text">-->
-<!--                  Visit Site <span>&rarr;</span>-->
-<!--                </a>-->
-                <a href="https://github.com/SaiSwarna">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-<!--            <div class="work__image-box">-->
-<!--              <img src="./images/project-3.png" class="work__image" alt="Project 3" />-->
-<!--            </div>-->
-          </div>
         </div>
-      </div>
     </section>
+
+    <!-- ***** Skills ***** -->
+<section class="skills" id="skills">
+  <h2>Tech Stack</h2>
+  <p class="skills-subtitle">Tools and technologies I worked with</p>
+
+  <div class="bubbles-container">
+      <div class="bubble" style="--i:1;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java"></div>
+      <div class="bubble" style="--i:2;"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Apache_kafka_wordtype.svg" alt="Kafka" title="Kafka"></div>
+      <div class="bubble" style="--i:3;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Apache_Flink_logo.svg" alt="Flink" title="Flink"></div>
+      <div class="bubble" style="--i:4;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python"></div>
+      <div class="bubble" style="--i:5;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" title="Spring Boot"></div>
+      <div class="bubble" style="--i:6;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker"></div>
+      <div class="bubble" style="--i:7;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes"></div>
+      <div class="bubble" style="--i:8;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL" title="MySQL"></div>
+      <div class="bubble" style="--i:9;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB"></div>
+      <div class="bubble" style="--i:10;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" title="PostgreSQL"></div>
+      <div class="bubble" style="--i:11;"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" title="AWS"></div>
+      <div class="bubble" style="--i:12;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins"></div>
+      <div class="bubble" style="--i:13;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git"></div>
+      <div class="bubble" style="--i:14;"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" title="Linux"></div>
+  </div>
+</section>
+
 
     <!-- ***** About ***** -->
 
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              I'm currently pursuing my Master's degree in Computer Science at the University of Ottawa. As I navigate the academic world once again, I'm excited to apply the latest insights to real-world challenges. With over 2 years of experience as a Software Engineer at GigSky, I have learned about the wireless industry and developed a strong foundation in Big data and analytics.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
+        <div class="row">
+            <h2>About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        I completed my Master’s in Computer Science at the University of Ottawa, and since then, I’ve been applying what
+                        I learned directly into industry work. My experience at Ericsson and my 2+ years as a Software Engineer at GigSky
+                        have given me a deep understanding of cloud-native systems, wireless networks, and data-driven engineering—skills
+                        I continue to refine through real-world impact.
+                    </p>
+                    <a href="#" class="btn">My Resume</a>
+                </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/MyPhoto.jpeg" alt="" />
-          </div>
+                <div class="about__photo-container">
+                    <img class="about__photo" src="./images/MyPhoto.jpeg" alt=""/>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <!-- ***** Contact ***** -->
+<!-- ***** Contact ***** -->
 
-  <section class="contact" id="contact">
+<section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Here are few facts about me- I love playing Badminton, I speak 6 languages & I enjoy cooking. If you want to connect or up for a quick coffee chat, feel free to reach out to me. The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="dowleyswarna@gmail.com" class="btn">My Email</a>
-      </div>
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+            <p>
+                Here are few facts about me- I love playing Badminton, I speak 6 languages & I enjoy cooking. If you
+                want to connect or up for a quick coffee chat, feel free to reach out to me. The quickest way to reach
+                out to
+                me is via an email.
+            </p>
+            <a href="dowleyswarna@gmail.com" class="btn">My Email</a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ***** Footer ***** -->
+<!-- ***** Footer ***** -->
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/SaiSwarna" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/sai-swarna-d-r-24684a196">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://uottawacsi5122.blogspot.com/2023/11/ux-analysis-of-zoom-app.html" title="Link to Blog">
-            <img src="./images/blogger.svg" class="footer__social-image" alt="Blog">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+<footer role="contentinfo" class="footer">
+  <div class="footer__container row">
+    <p class="footer__copyright">
+      &copy; 2025 Sai Swarna Dowley Rajendran. All rights reserved.
+    </p>
+    <ul class="footer__social-links">
+      <li>
+        <a href="https://github.com/SaiSwarna" title="GitHub">
+          <img src="./images/github.svg" class="footer__social-image" alt="Github">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sai-swarna-d-r-24684a196" title="LinkedIn">
+          <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+        </a>
+      </li>
+      <li>
+        <a href="https://uottawacsi5122.blogspot.com/2023/11/ux-analysis-of-zoom-app.html" title="Blog">
+          <img src="./images/blogger.svg" class="footer__social-image" alt="Blog">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
+<a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+</a>
+<script src="./index.js"></script>
 </body>
 
 </html>
